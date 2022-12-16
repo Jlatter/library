@@ -5,8 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Library</h1>
+<div class="books">  
+    <div class="book"></div>
+</div>
+    <form id="form" action="#">
+        <label for="title">Title<input type="text" name="title" id="titleid" required></label>
+        <label for="author">Author<input type="text" name="author" id="authorid"></label>
+        <label for="read">Read status<select name="readStatus" id="readStatusid">
+            <option value="Read">Read</option>
+            <option value="Not">Not Read</option>
+        </select></label>
+        <label for="pages">Number of pages<input type="number" name="pages" id="pagesid"></label>
+        <label for="submit"><input type="submit" name="Submit" id="submitid"></label>
+        <button id="close">Close</button>
+    </form>
+    <button id="add-book">Add book</button>
+    <div class="container" id="container">
+        <div class="h1container">
+            <h1>Title</h1> 
+            <h1>Author</h1> 
+            <h1>Pages</h1> 
+            <h1>Have read?</h1>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
+
+<!--console.log(n.value);
+console.log(n);
+booklist.classList.add("book");
+console.log("Show")
+const titleval = title.value;
+const authorval = author.value;
+const pageval = pagenum.value;
+
+titleNode.innerHTML = "Title:"+ titleval;
+booklist.appendChild(titleNode)
+document.body.appendChild(booklist)
+*/
+
+//function showlibrary(){
+    myLibrary.forEach(function(bookItem){
+       console.log(bookItem[1])
+     booklist.classList.add("book")
+     titleNode.innerHTML =
+     document.body.appendChild(booklist);
+     booklist.appendChild(titleNode);
+     })
+    
+   }
