@@ -17,13 +17,14 @@ dlose.addEventListener('click', (e) => {
 
 const myLibrary = [];
 
-function Book(titles, authors, pagenums, readStatuss) {
-  this.titles = titles;
-  this.authors = authors;
-  this.pagenums = pagenums;
-  this.readStatuss = readStatuss;
+class Book {
+  constructor(titles, authors, pagenums, readStatuss) {
+    this.titles = titles;
+    this.authors = authors;
+    this.pagenums = pagenums;
+    this.readStatuss = readStatuss;
+  }
 }
-
 function addBookToLibrary() {
   const newBook = new Book(
     title.value,
